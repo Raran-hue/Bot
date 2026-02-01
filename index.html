@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .project-card a:hover {
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 My Projects</h1>
+        <p>Welcome to my project showcase</p>
+        
+        <div class="projects">
+            <div class="project-card">
+                <h3>📊 Table Project</h3>
+                <p>A styled table with CSS</p>
+                <a href="test.html">View Project</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Cool Design 1</h3>
+                <p>Check out this cool design</p>
+                <a href="cool2.html">View Project</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Cool Design 2</h3>
+                <p>Another awesome project</p>
+                <a href="Cool.html">View Project</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
